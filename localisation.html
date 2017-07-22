@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Whatfind</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="dist/mapwize.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="dist/mapwize.css" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css" media="all">
+		<link rel="stylesheet" href="assets/fonts/font-awesome.css" type="text/css" media="all">
+		
+		<link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,600,700,800,400' rel='stylesheet' type='text/css'>
+
+	<style>
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+#myULL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myULL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: rbga(255,255,255,0.7);
+  padding: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  color: blue;
+  display: block
+}
+
+#myULL li a.header {
+  background-color:rbga(0,0,0,0.7);
+  cursor: pointer;
+}
+
+#myULL li a:hover:not(.header) {
+  background-color: rbga(255,255,255,0.7);
+}
+
+ 
+        #map {
+            position:absolute; z-index:2;top:40; bottom:30; width:100%;
+            height: 100%;
+			margin-left:10px;
+			overflow:auto;
+        }
+</style>
+	
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+				
+				<div class="top">
+
+						<div id="logo" >
+							<span class="image avatar48" style="background:none;"><img src="images/unnamed.png" alt="" /></span>
+							<h1 id="title">WhatFind</h1>
+							<p></p>
+						</div>
+
+						<nav id="nav">
+						
+							<ul>
+								<li><a href="index.html?#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-key">Access key</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-barcode">QR-code</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-microphone">Audio</span></a></li>
+							
+							</ul>
+						</nav>
+
+				</div>
+
+				
+			</div>
+
+		<!-- Main -->
+		<div class="ban">
+		<div class="agileinfo_search">
+								<form action="#" method="post">
+									<input type="text" name="Search" id="myIn"  onkeyup="MyFunction()"placeholder="Type your text..." required="">
+									<input type="submit" value=" "  >
+								</form>
+							</div>
+		</div>
+			<div id="main">
+			
+				<!-- Intro -->
+					
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two" >
+				<iframe class="frame-border scroll-pane" src="semplemap.php" frameborder="0" style="width:100%; height:600px;"></iframe>
+					</section>
+
+				
+
+			
+			<div class="ban1">
+			<div class="ban10" align="center">
+			 <a href="batimentd.html" class="ico"><i class="glyphicon glyphicon-globe"> </i></a>
+			 <a class="ico cle"><i class="glyphicon glyphicon-wrench"> </i></a> 
+			 <a class="ico"><i class="glyphicon glyphicon-road"> </i></a>
+			 <a href="localisation.html" class="ico2"><i class="glyphicon glyphicon-map-marker"> </i></a>
+			</div>
+			</div>
+
+		
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			   <script src="assets/js/bootstrap.js"> </script>
+<ul id="myULL" style="background-color:rgba(0, 0, 0, 0.7); position:fixed; top:55px; right:0; width:100%; 
+    height:500px; overflow:auto; text-align:left; display:none; float:left; z-index:8;">
+    
+		<div class="popupc" style="width:70%;   background-color:rgba(255,255,255,0.9); position:absolute;  z-index:100;top:5%; 
+        right:4%; border-radius:3px; padding:2%; box-shadow:#fff 1px 1px 125px 0.5px;">
+       
+  
+				
+		<li><a href="#" class="header"> <img src='ima/$b1' width='40px' height='40px' style='   border-radius:50px;  margin-right:7px;'/>Marriott </a></li>
+		<li><a href="#" class="header"> <img src='ima/$b1' width='40px' height='40px' style='   border-radius:50px;  margin-right:7px;'/>KINAM </a></li>						
+ <li><a href="#" class="header"> <img src='ima/$b1' width='40px' height='40px' style='   border-radius:50px;  margin-right:7px;'/>Pablo House </a></li>
+<li><a href="#" class="header"> <img src='ima/$b1' width='40px' height='40px' style='   border-radius:50px;  margin-right:7px;'/>Edrice House </a></li>
+ <li><a href="#" class="header"> <img src='ima/$b1' width='40px' height='40px' style='   border-radius:50px;  margin-right:7px;'/>Yves House </a></li>
+  
+</div>
+		
+      
+	
+    </ul>
+	   
+			   <div class="divpopup5" style=" position:fixed; top:55px; right:0; width:100%; 
+    height:500px; overflow:auto; text-align:left; display:none; float:left; z-index:999;">
+    
+		<div class="popupc" style="width:70%;   background-color:rgba(255,255,255,0.9); z-index:999; position:absolute; top:25%; 
+        right:14%; border-radius:3px; padding:2%;">
+       
+						<div class="close">X</div>
+	
+									<label>Between your access key</label><div id="rep" style="color:red;"></div>
+									<input type="text" name="Search" id="Search" placeholder="Tapez votre texte..."  style="width:100%; height:30px;  color:black;margin-bottom:5px;" ng-model="name"/></br>
+									<input type="submit" value="Ok" style="width:100%; height:40px; font-size:14px; " onclick="submitadmin();" align="center">
+								
+  
+</div>
+		
+      <script type="text/javascript">
+$(document).ready(function() 
+{
+
+	$(".polo").click(function()
+	{
+		document.location.href="localisation.html";
+		
+		
+	});
+	
+	$(".close").click(function()
+	{
+		$(".divpopup5").slideToggle(900);
+		
+		
+	});
+	
+	$(".carte").click(function()
+	{
+		document.location.href="batimentd.html";
+		
+		
+	});
+	
+	
+});
+</script>
+	
+    </div>
+	<script>
+function MyFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myIn");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myULL");
+	var ell = document.getElementById("erreur");
+	  var el = document.getElementById("myULL");
+       el.style.display = (!el.style.display || el.style.display == "none") ? "block" : "none";
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+		
+      
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+		
+      
+        }
+    }
+}
+</script>
+<script type="text/javascript">
+$(document).ready(function() 
+{
+$(".popup1").click(function()
+	{
+		$('.divpopup5').slideToggle(300);
+		
+		
+	});
+	
+	$(".cle").click(function()
+	{
+		$('.divpopup5').slideToggle(300);
+		
+		
+	});
+	
+
+	
+	
+});
+</script>
+<script src="dist/mapwize.js" type="text/javascript"></script>
+	</body>
+</html>
